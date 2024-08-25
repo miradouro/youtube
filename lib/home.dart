@@ -13,6 +13,14 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> telas = [
+      Text("Inicio"),
+      Text("Em alta"),
+      Text("Inscrições"),
+      Text("Biblioteca"),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -51,7 +59,7 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: Container(),
+      body: telas[_indiceAtual],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         fixedColor: Colors.red,
