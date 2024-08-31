@@ -13,7 +13,7 @@ class _EmAltaState extends State<EmAlta> {
     return Container(
       child: Center(
         child: Text(
-          "EmAlta",
+          "Em alta",
           style: TextStyle(
             fontSize: 25,
           ),
